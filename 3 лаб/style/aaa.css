@@ -1,0 +1,217 @@
+body{
+    font-family: 'Google Sans';
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(230, 230, 230);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1280px;
+    height: 50px;
+    
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.aaa{
+    width: 20px;
+    height: 100%;
+}
+.CatSite{
+    display: flex;
+    align-items: center;
+}
+.cs{
+text-decoration: underline;
+}
+.main-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CatLab3{
+    width: 100%;
+    max-width: 1280px;
+    font-size: 200%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: flex-start;
+}
+.main-catalog{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+.item{
+    padding: 10px;
+    width: 33.33%;
+    aspect-ratio: 4/3;
+}
+.item .img{
+    border: 1px rgb(190, 190, 190) solid;
+    border-radius: 5%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+.item .name{
+    padding-top: 5px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 3%;
+}
+.btn{
+    display: flex;
+    font-size: auto;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    border: 1px rgb(190, 190, 190) solid;
+}
+.btn:active{
+    background-color:  rgb(189, 189, 189);
+}
+
+@media screen and (max-width: 640px){
+    .main-body{
+        width: 100%;
+    }
+    .main-header{
+        width: 100%;
+        height: auto;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+        margin: 12px;
+    }
+    .header > img{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px;
+    }
+    .CatSite{
+        padding-top: 2%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    .item{
+        width: 100%;
+        margin: 20px 12px 20px 12px;
+    }
+    .item:hover .img{
+        opacity: 40%;
+        transition: 0.35s;
+    }
+    .cs:hover {
+        text-decoration: none;
+    }
+    .CatLab3{
+        font-size: 180%;
+    }
+}
+@media screen and (max-width: 414px){
+    .CatLab3{
+        font-size: 140%;
+    }
+}
+@media screen and (min-width: 1280px){
+    .main-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .CatLab3{
+        padding-left: 40px;
+        padding-right: 40px;
+        max-width: 1280px;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 250%;
+    }
+    header{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .main-catalog{
+        margin-left: 40px;
+        margin-right: 40px;
+        width: auto;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .item{
+        margin-bottom: 20px;
+        width: 30%;
+        flex: 1 1 calc((100% / 3) - 2rem);
+    }
+    .name{
+        font-size: 150%;
+    }
+    .price{
+        font-size: 120%;
+    }
+}
+
+
+
+@media screen and (max-width: 1280px){
+    header{
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .CatLab3{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
