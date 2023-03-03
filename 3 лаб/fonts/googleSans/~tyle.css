@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Google Sans';
+    font-weight: 500;
+    font-style: italic;
+    src: local('Google Sans Medium Italic'), local('Google-Sans-Medium-Italic'),
+        url('GoogleSans-MediumItalic.woff2') format('woff2'),
+        url('GoogleSans-MediumItalic.woff') format('woff'),
+        url('GoogleSans-MediumItalic.ttf') format('truetype');
+    
+  }
